@@ -1,124 +1,440 @@
-<!doctype html>
-<html class="no-js" lang="">
+@charset "UTF-8";
 
-<head>
-  <meta charset="utf-8">
-  <title>CONTACT</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+/*基本の設計*/
+html {
+    font-size: 100%;
+}
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/assist/image/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assist/image/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assist/image/favicon-16x16.png">
-  <link rel="manifest" href="/assist/image/site.webmanifest">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <!-- Place favicon.ico in the root directory -->
+body {
+    font-family: "游ゴシック";
+    line-height: 1.7;
+    color: #0F6585;
+}
 
-  <link rel="stylesheet" href="http://unpkg.com/ress/dist/ress.min.css">
+/*ヘッダー
+---------------------------*/
+.head {
+    margin-top: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;900&family=Philosopher:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+a {
+    text-decoration: none;
+    display: inline;
+    color: #0F2A85;
+}
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="/assist/css/style.css">
-  <meta name="theme-color" content="#fafafa">
-</head>
+a span {
+    vertical-align: middle;
+}
 
-<body>
+img {
+    max-width: 100%;
 
-    <div class="big-bg">
-        <header class="page-header wrapper">
-          <h1 class="head"><a href="/index .html"><img class="logo" src="/assist/image/icon3.png" alt="ポリテクセンター埼玉"><span>ポリテク埼玉</span></a></h1>
-          <nav>
-            <ul class="main-nav">
-              <li><a href="/index .html">menu</a></li>
-              <li><a href="question.html">question</a></li>
-              <li><a href="/contact.html">contact</a></li>
-            </ul>
-          </nav>
-        </header>
-    </div>
+}
 
-    <div id="contact" class="big-bg">
-        <header class="page-contact wrapper">
+.logo {
+    width: 50px;
+}
 
-        </header>
+.page-header {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffffa6;
+    opacity: 0.9;
+}
 
-  <div class="wrapper">
-    <h2 class="page-title">Contact</h2>
-    <from action="#">
-        <div>
-            <label for="name">お名前</label>
-            <input type="text" id="name" name="your-name">
-        </div>
-
-        <div>
-            <label for="email">メールアドレス</label>
-            <input type="email" id="email" name="your-email">
-        </div>
-
-        <div>
-            <label for="message">メッセージ</label>
-            <textarea id="messa" name="your-message"></textarea>
-        </div>
-
-        <input type="submit" class="button" value="送信">
-    </from>
-  </div>
-  </div>
-
-
-
-    <section id="location">
-        <div class="wrapper">
-            <div class="location-info">
-                <h3 class="sub-title">ポリテクセンター埼玉</h3>
-                <p>
-                    住所：埼玉県さいたま市緑区<br>
-                    　　　原山２丁目　18-8<br>
-                    　　　ポリテクセンター埼玉<br>
-                    電　話　：　048-882-4079<br>
-                    営業時間：　08:45～17:00<br>
-                    休日：土曜,日曜
-                </p>
-            </div>
-            <div class="location-map">
-                <iframe src="https://www.google.com/maps/d/u/4/embed?mid=1mV4GC85kZOrfFzmExyz56TooPAX4B0k&ehbc=2E312F" width="640" height="480"></iframe>
-            </div>
-        </div>
-    </section>
-
-    <section id="sns">
-        <div class="wrapper">
-            <div class="sns-box">
-                <h3 class="sub-title">JR東日本 運行情報</h3>
-                <a class="twitter-timeline" data-height="315" href="https://twitter.com/JRE_F_Tokaido?ref_src=twsrc%5Etfw">Tweets by JRE_F_Tokaido</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-
-            <div class="sns-box">
-                <h3 class="sub-title">国際興業バス</h3>
-                <a class="twitter-timeline" data-height="315" href="https://twitter.com/kokusaibus?ref_src=twsrc%5Etfw">Tweets by kokusaibus</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-
-            <div class="sns-box">
-                <h3 class="sub-title">ICTエンジニア科　紹介動画</h3>
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/V4k-8g3KfHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-        </div>
-    </section>
-
-
-
-        
-  <footer>
-    <div class="wrapper">
-        <p><small>&copy; 2023 MK_poriteku</small></p>
-    </div>
-  </footer>
+.wrapper {
     
-   <script src="/assist/js/index.js"></script>
-</body>
+    margin:0 auto;
+    padding:0 6%;
+}
 
-</html>
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+
+.main-nav li {
+    margin-left:36px;
+}
+
+.main-nav a {
+    color: #0F2A85;
+}
+
+.main-nav a:hover {
+    color: #0bd;
+}
+
+/*メイン
+---------------------------*/
+.top {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.top > strong {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    text-align: center;
+    
+}
+
+
+.video {
+    position: absolute;
+    z-index: 1;
+    width: auto;
+    height: 130%;
+}
+
+/*ボタン*/
+.btn {
+    font-size: 1.5rem;
+    background: rgb(0, 78, 92);
+    color:#FFF;
+    border-radius: 20px;
+    padding: 18px 32px;
+    line-height: 1.0;
+}
+
+.ques {
+    box-shadow: 0px 6px rgb(0, 91, 107);
+    opacity:0.7;
+}
+
+.ques:active{
+    box-shadow:none;
+    position:relative;
+    top:1px;
+    transform: translateY(8px);
+  }
+
+.ques:hover{
+    background: #0bd;
+    color:#FFF;
+    opacity:1;
+}
+
+
+/*questionページ
+---------------------------*/
+.container {
+    margin-top: 200px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.mt-3 {
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 1.625rem
+}
+
+.containt {
+    display: flex;
+    justify-content: center;
+}
+
+.select {
+    margin-left: 20px;
+    font-size: 1.25rem;
+    background: #0bd;
+    color:#FFF;
+    border-radius: 10px;
+    padding: 25px 40px;
+    box-shadow: 0px 6px rgb(0, 91, 107);
+    opacity: 0.7;
+}
+
+.select:active{
+    box-shadow:none;
+    position:relative;
+    top:1px;
+    transform: translateY(8px);
+  }
+
+.select:hover {
+    background: #0bd;
+    box-shadow: 0px 6px rgb(0, 91, 107);
+    color:#FFF;
+    opacity: 1;
+}
+
+/* CONTACT
+---------------------------*/
+#contact {
+    background-image: url(/assist/image/contact1.jpg);
+    min-height: 100vh;
+}
+
+.page-contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffffa6;
+}
+
+/* フォーム */
+.page-title {
+    font-size:5rem;
+    font-family: 'philosopher', serif;
+    text-transform: uppercase;
+    font-weight:normal;
+    color: #fff;
+    margin-top: 150px;
+}
+
+form div {
+    margin-bottom: 14px;
+}
+
+label {
+    font-size: 1.125rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    color: #FFF;
+}
+
+input[type="text"],input[type="email"],
+textarea {
+    background: rgba(255, 255, 255, .5);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+input[type="text"],input[type="email"] {
+    width: 100%;
+    max-width: 240px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height:  1;
+    color: #fff;
+}
+
+.button {
+    margin-top: 5px;
+    background-color: rgb(105, 130, 134);
+    box-shadow: 2px 4px rgb(61, 71, 73);
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: rgb(101, 145, 151);
+    box-shadow: 2px 4px rgb(61, 71, 73);
+}
+
+.button:active {
+    box-shadow:none;
+    position:relative;
+    top:1px;
+    transform: translateY(4px);
+}
+
+/*　店舗情報・地図　*/
+#location {
+    padding: 4% 0;
+    
+}
+
+#location .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.location-info {
+    width: 22%;
+}
+
+.location-info p {
+    padding: 12px 10px;
+}
+
+.location-map {
+    width: 74%;
+}
+
+.sub-title {
+    font-size: 1.375rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px rgb(101, 145, 151) solid;
+    font-weight: normal;
+}
+
+/* iframe */
+iframe {
+    width: 100%;
+}
+
+/* SNS */
+#sns {
+    background :#FAF7F0;
+    padding: 4% 0;
+}
+
+#sns .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sns .sub-title {
+    margin-bottom: 30px;
+}
+
+.sns-box {
+    width: 30%;
+}
+
+/*フッター
+---------------------------*/
+footer {
+    background: #0F6585;
+    text-align: center;
+    padding: 26px 0;
+}
+
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+/*モバイル版
+---------------------------*/
+@media(max-width: 600px){
+    
+    /* TOP */
+    .top > strong {
+        font-size: 50px;
+    }
+
+    .ques {
+        font-size: 20px;
+        width: 60%;
+        padding: 10px 20px
+    }
+
+    .video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 120%
+    }
+
+    /* QUESTION */
+    .containt {
+        flex-direction: column;
+    }
+
+    .select {
+        margin-top: 10px;
+        margin-left: 0px;
+        font-size: 1.10rem;
+        background: #0bd;
+        color:#FFF;
+        border-radius: 10px;
+        padding: 20px 30px;
+        box-shadow:none;
+        opacity: 1;
+    }
+
+    .select:active{
+        box-shadow:none;
+        position:relative;
+        top:0px;
+        transform:none;
+      }
+    
+    .select:hover {
+        background: rgb(0, 136, 160);
+        box-shadow: none;
+        color:#FFF;
+    }
+
+    .mt-3 {
+        font-size: 1.15rem;
+    }
+
+    .container {
+        margin-top: 120px;
+    }
+
+    /* HEADER */
+    .main-nav {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .main-nav li {
+        margin: 0 20px;
+    }
+
+    .page-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page-title {
+        font-size: 2.5rem;
+        padding-top: 100px;
+    }
+
+    
+    /* CONTACT */
+    #contact .page-title {
+        margin-top: 40px;
+    }
+
+    /* フォーム */
+    input[type="text"],input[type="email"],
+    textarea {
+        max-width: 100%;
+    }
+    
+     /* 店舗情報・地図　/ SNS　*/
+     #location .wrapper,#sns .wrapper {
+        flex-direction: column;
+    }
+
+    .location-info, .location-map, .sns-box{
+        width: 100%;
+    }
+
+    .sns-box {
+        margin-bottom: 30px;
+    }
+}
